@@ -46,7 +46,7 @@ if(isset($_SESSION['accountCreated'])){
                 <button type="submit" id="signupBtn" name="signup" required><b>Sign Up</b></button>
             </div>
 
-            <span class="signinLink">Have an account already? <a href="index.php">Login</a></span>
+            <span class="signinLink">Have an account already? <a href="signIn.php">Login</a></span>
         </form>
     </div>
 </div>
@@ -78,7 +78,7 @@ if(isset($_POST['signup'])){
     if($res == true){
         //message to show account created successfully
             $_SESSION['accountCreated']= '<span class="addedAccount">Account '.$Name.' created!</span>';
-            header('location: '.SITEURL. 'index.php');
+            header('location: '.SITEURL. 'signIn.php');
             exit();
         }
         else{

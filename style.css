@@ -141,7 +141,7 @@ header img {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(../images/home.jpg) no-repeat;
+  background:url(images/home.png);
   background-size: cover;
   background-position: center;
 }
@@ -154,7 +154,7 @@ header img {
 
 .home .content h3 {
   font-size: 6rem;
-  color: white;
+  color:white;
   line-height: 1.2;
 }
 
