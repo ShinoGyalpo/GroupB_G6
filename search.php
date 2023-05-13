@@ -22,7 +22,7 @@ if(isset($_POST['search'])) {
     if(mysqli_num_rows($result) > 0) {
         // If yes, display the appointment data in a printable format
         $appointment_row = mysqli_fetch_assoc($result);
-        $invoice_html = "<html><head><style>table {border-collapse: collapse; width: 80%; margin: 0 auto; font-family: Poppins, sans-serif; color: #333;} th, td {text-align: left; padding: 8px;} tr:nth-child(even){background-color: #f2f2f2}</style></head><body>";
+        $invoice_html = "<html><head><style>table {border-collapse: collapse; width: 80%; margin: 0 auto; font-family: Arial, sans-serif; color: #333;} th, td {text-align: left; padding: 8px;} tr:nth-child(even){background-color: #f2f2f2}</style></head><body>";
         $invoice_html .= "<h2 style='text-align: center;'>Appointment Details</h2>";
         $invoice_html .= "<img src='images/logo.png' alt='Hospital Logo' style='display: block; margin: 0 auto;'>";
         $invoice_html .= "<h3 style='text-align: center;'>Kathmandu Dental</h3>";
